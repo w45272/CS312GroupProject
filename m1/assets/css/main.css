@@ -1,0 +1,10 @@
+.content {
+    
+    display: inline-block;  
+    
+    border: 3px solid green;
+    padding: 5px;
+    vertical-align: top;
+    width: 80%;
+    height: 400px; 
+}
