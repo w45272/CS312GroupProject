@@ -1,5 +1,5 @@
 <?php echo Asset::css('home.css'); ?>
 
 <div class="home">
-    Home Page...
+    <?php echo Asset::img('background.jpg'); ?>
 </div>
