@@ -4,7 +4,10 @@
     float: left;
     /* border: 3px solid blue; */
     padding: 15px;
-    width: 300px;
+    width: 300px;   
+    font-weight: bold;
+    color: black;
+    height: 100%;
 
 }
 .members img{
@@ -17,4 +20,7 @@
 .about {
     text-align: center;
     overflow: hidden;
+    padding-left: 15%;
+    background:linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url(../img/background.jpg);
+
 }
