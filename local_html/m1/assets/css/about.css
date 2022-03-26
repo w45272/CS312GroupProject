@@ -9,13 +9,12 @@
 }
 .members img{
     width: 225px;
+    min-height: 250px;
+    max-height: 250px;
     
 }
 
 .about {
     text-align: center;
     overflow: hidden;
-    
 }
-
-
