@@ -22,11 +22,11 @@
   <div class="members">
     Mariah Bradford
     <hr>
-    <?php echo Asset::img('eseefried_profile.jpeg'); ?>
-    <hr>
-    <p>"I'm a senior studying Phyics and Computer Science at CSU. In my free time I enjoy anime, video games,
-      and playing sports! I'm also currently conducting research in the CSU vision lab to help detect methane emissions."</p>
-  </div>
+    <?php echo Asset::img('bbykitty_profile.jpg'); ?>
+        <hr>
+        <p>"I am a student majoring in psychology and computer science. I work as a research assistant for a project 
+            focused on AI in education. I enjoy spending time outside with friends and family, and I love a good picnic. "</p>
+    </div>
   <div class="members">
     Joshua Keene
     <hr>
