@@ -1,8 +1,6 @@
 <?php echo Asset::css('about.css'); ?>
 
-<div class="about">
-    <p>About Page Info... </p>
-   
+<div class="about"> 
     
     <div class="members">
         Ethan Seefried
@@ -13,18 +11,20 @@
             and playing sports! I'm also currently conducting research in the CSU vision lab to help detect methane emissions."</p>
     </div>
     <div class="members">
-        Team Member 2
+        Will Mingus
         <hr>
-        image placeholder
+        <?php echo Asset::img('eseefried_profile.jpeg'); ?>
         <hr>
-        Bio/Info
+        <p>"I'm a senior studying Phyics and Computer Science at CSU. In my free time I enjoy anime, video games,
+            and playing sports! I'm also currently conducting research in the CSU vision lab to help detect methane emissions."</p>
     </div>
     <div class="members">
-        Team Member 3
+        Mariah Bradford
         <hr>
-        image placeholder
+        <?php echo Asset::img('eseefried_profile.jpeg'); ?>
         <hr>
-        Bio/Info
+        <p>"I'm a senior studying Phyics and Computer Science at CSU. In my free time I enjoy anime, video games,
+            and playing sports! I'm also currently conducting research in the CSU vision lab to help detect methane emissions."</p>
     </div>
     <div class="members">
         Joshua Keene
