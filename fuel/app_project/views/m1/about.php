@@ -13,7 +13,7 @@
   <div class="members">
     Will Mingus
     <hr>
-    <?php echo Asset::img('eseefried_profile.jpeg'); ?>
+    <?php echo Asset::img('w45272_profile.jpg'); ?>
     <hr>
     <p>"I am an Applied Physics major concentrating in computer science. Currently, I work in Colorado State
       University's High Energy Physics lab simulating particles traveling through liquid argon. In my free time
