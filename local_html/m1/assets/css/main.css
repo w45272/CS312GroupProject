@@ -1,10 +1,12 @@
 .content {
     
     display: inline-block;  
-    
-    border: 3px solid green;
-    padding: 5px;
+    padding: 0px;
+    width: 100%;
     vertical-align: top;
-    width: 80%;
-     
+    height: 60%;
+    
+    background-color: rgb(0, 0, 0);
+    color: white;       
+
 }

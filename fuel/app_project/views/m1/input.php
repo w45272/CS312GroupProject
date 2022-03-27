@@ -1,5 +1,14 @@
 
 <div class = "input"> 
+    <?php if(isset($messages) and count($messages)>0){
+        echo "<div id='warning'><ul>";
+        foreach($messages as $msg){
+            echo "<li>.$msg.</li>";
+            }
+        echo "</ul></div>";}
+     ?>
+
+
          <?php echo Form::open(array('action' => 'index.php/colors', 'method' => 'post')); ?>  
          <?php 
             

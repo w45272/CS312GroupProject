@@ -48,15 +48,16 @@ class Controller_M1 extends Controller_template
 	public function action_colors()
 	{
 	
+	         
+	}
+	public function get_colors(){
 	    $data = array();
         $this->template->header = View::forge('m1/header', array('title' => 'Test Colors Form Input Page'));
         $this->template->footer = View::forge('m1/footer', $data);
         $this->template->nav_bar = View::forge('m1/nav_bar', $data);
-        if ($_SERVER["REQUEST_METHOD"] == "GET") {
-            //if(isset($_GET['input_error'])){$data['input_error'] = true;}
-            $this->template->content = View::forge('m1/input', $data);}
-        //else{      
-            //$this->template->content = View::forge('project/colors', $data);}
+        $this->template->content = View::forge('m1/input', $data);
+	
+	
 	}
 	
 	public function post_colors()
@@ -72,16 +73,23 @@ class Controller_M1 extends Controller_template
             ->add_rule('numeric_max', 10); 
 	
 	    if($rules->run()){
-	        //View::set_global('input_error','false',false);
             $data = array('size' => Input::post('size'), 'count' => Input::post('count')); 
         
             $this->template->header = View::forge('m1/header', array('title' => 'Test Colors POST Page'));
             $this->template->footer = View::forge('m1/footer', $data);
             $this->template->nav_bar = View::forge('m1/nav_bar', $data);
-            $this->template->content = View::forge('m1/colors', $data);}
+            $this->template->content = View::forge('m1/colors', $data);
+            }
          else{
-            View::set_global('input_error','true',false);
-            Response::redirect('m1/colors');   }
+            $this->template->messages = $rules->error();
+            $data = array();
+            $this->template->header = View::forge('m1/header', array('title' => 'Test Colors Form Input Page'));
+            $this->template->footer = View::forge('m1/footer', $data);
+            $this->template->nav_bar = View::forge('m1/nav_bar', $data);
+            $this->template->content = View::forge('m1/input', $data);
+            }
+            
+            //Response::redirect('project/colors');   }
     }	
 
     public function action_404(){
