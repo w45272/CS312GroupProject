@@ -6,9 +6,28 @@
         width: 90%;
         color: white;
         border: 3px solid white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+}
+.colors td{
+    border: 3px solid white;
 }
 
-#small_table {
-         
-    
+.small_col_one {
+    width:20%;           
 }
+
+.small_col_two {
+    width:80%;
+}
+#small_table{
+    margin-top: 30px;
+}
+#large_table{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+
