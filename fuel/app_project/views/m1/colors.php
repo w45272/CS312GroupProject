@@ -8,7 +8,7 @@
         </thead>
         <?php
         for($x=0; $x<$count; $x++){
-            echo "<tr><td><select id='color'".$x." name='colors'> 
+            echo "<tr><td><select id='color_select".$x."' name='colors'> 
                             <option value='red'>Red</option>
                             <option value='orange'>Orange</option>
                             <option value='yellow'>Yellow</option>
@@ -23,6 +23,8 @@
                     </td>
                     <td>color</td>
                   </tr>";
+            // JS to ensure unique initial selections fromo dropdown      
+            echo "<script>document.getElementById('color_select".$x."').getElementsByTagName('option')[".$x."].selected = 'selected'  </script>";
         }
         ?>
         
