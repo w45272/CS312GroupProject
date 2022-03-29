@@ -1,12 +1,17 @@
-.home {
+.home{
     text-align: center;
-
-}
-
-.home img{
-    
-    width: 100%;
+	overflow: hidden;
+	padding-left: 15%;
+	background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url(../img/background.jpg);
+	background-size: 100%;
+    width: auto;
     height: 100%;
-        
-
+}
+.welcome {
+	font-size: 60px;
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	padding-right: 200px;
+	color: white;
 }
