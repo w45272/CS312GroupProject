@@ -1,4 +1,6 @@
 <?php echo Asset::css('color.css'); ?>
+<?php echo Asset::js('colors.js'); ?>
+    
 
 <div class="colors">
     <table id="small_table">
@@ -8,7 +10,10 @@
         </thead>
         <?php
         for($x=0; $x<$count; $x++){
-            echo "<tr><td><select id='color_select".$x."' name='colors'> 
+            echo "<tr><td>
+            
+            <p id='warning".$x."' hidden >Please Choose an unused color! </p> 
+            <select id='color_select".$x."' name='colors' class='color_select'> 
                             <option value='red'>Red</option>
                             <option value='orange'>Orange</option>
                             <option value='yellow'>Yellow</option>
@@ -19,14 +24,21 @@
                             <option value='brown'>Brown</option>
                             <option value='black'>Black</option>
                             <option value='teal'>Teal</option>
-                           </select> 
+                           </select>
+                            
                     </td>
                     <td>color</td>
                   </tr>";
             // JS to ensure unique initial selections fromo dropdown      
-            echo "<script>document.getElementById('color_select".$x."').getElementsByTagName('option')[".$x."].selected = 'selected'  </script>";
+            echo "<script>";
+            echo "document.getElementById('color_select".$x."').getElementsByTagName('option')[".$x."].selected = 'selected';";
+            echo "document.getElementById('color_select".$x."').addEventListener('focus', saveValue);";
+            echo "document.getElementById('color_select".$x."').addEventListener('change', validateChange);";
+            echo "</script>";
         }
         ?>
+    
+        
         
     </table>
     
