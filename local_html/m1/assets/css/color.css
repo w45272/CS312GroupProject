@@ -1,28 +1,44 @@
 .colors {
     text-align: center;
+	overflow: hidden;
+	padding-left: 15%;
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(../img/background2.jpg);
+	background-size: 100%;
+    width: auto;
+    height: 100%;
  
 }
+
+.input{
+	overflow: hidden;
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(../img/background2.jpg);
+	background-size: 100%;
+    width: auto;
+    height: 100%;
+}
 .colors table {
-        width: 90%;
+        width: 50%;
         color: white;
         border: 3px solid white;
         text-align: center;
-        margin-left: auto;
+        margin-left: 15%;
         margin-right: auto;
+
+        
 }
 .colors td{
     border: 3px solid white;
 }
 
 .small_col_one {
-    width:20%;           
+    width:1%;           
 }
 
 .small_col_two {
     width:80%;
 }
 #small_table{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 #large_table{
     margin-top: 50px;
@@ -32,6 +48,7 @@
     color:red;
     
 }
+
 
 
 
