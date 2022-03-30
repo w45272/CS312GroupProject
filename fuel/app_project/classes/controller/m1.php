@@ -27,7 +27,7 @@ class Controller_M1 extends Controller_template
 	{
         $data = array();
        // $data['title'] = 'Test Index Page';
-        $this->template->header = View::forge('m1/header', array('title' => 'Home Page'));
+        $this->template->header = View::forge('m1/header', array('title' => 'Home'));
         $this->template->footer = View::forge('m1/footer', $data);
         $this->template->nav_bar = View::forge('m1/nav_bar', $data);
         $this->template->content = View::forge('m1/home', $data);
@@ -37,7 +37,7 @@ class Controller_M1 extends Controller_template
 	public function action_about()
 	{
         $data = array();
-        $this->template->header = View::forge('m1/header', array('title' => 'Test About Page'));
+        $this->template->header = View::forge('m1/header', array('title' => 'About the Team!'));
         $this->template->footer = View::forge('m1/footer', $data);
         $this->template->nav_bar = View::forge('m1/nav_bar', $data);
         $this->template->content = View::forge('m1/about', $data);
@@ -52,7 +52,7 @@ class Controller_M1 extends Controller_template
 	}
 	public function get_colors(){
 	    $data = array();
-        $this->template->header = View::forge('m1/header', array('title' => 'Test Colors Form Input Page'));
+        $this->template->header = View::forge('m1/header', array('title' => 'Color Generator'));
         $this->template->footer = View::forge('m1/footer', $data);
         $this->template->nav_bar = View::forge('m1/nav_bar', $data);
         $this->template->content = View::forge('m1/input', $data);
