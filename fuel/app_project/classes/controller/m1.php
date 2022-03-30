@@ -75,7 +75,7 @@ class Controller_M1 extends Controller_template
 	    if($rules->run()){
             $data = array('size' => Input::post('size'), 'count' => Input::post('count')); 
         
-            $this->template->header = View::forge('m1/header', array('title' => 'Test Colors POST Page'));
+            $this->template->header = View::forge('m1/header', array('title' => 'Color Generator'));
             $this->template->footer = View::forge('m1/footer', $data);
             $this->template->nav_bar = View::forge('m1/nav_bar', $data);
             $this->template->content = View::forge('m1/colors', $data);
@@ -83,7 +83,7 @@ class Controller_M1 extends Controller_template
          else{
             $this->template->messages = $rules->error();
             $data = array();
-            $this->template->header = View::forge('m1/header', array('title' => 'Test Colors Form Input Page'));
+            $this->template->header = View::forge('m1/header', array('title' => 'Color Generator'));
             $this->template->footer = View::forge('m1/footer', $data);
             $this->template->nav_bar = View::forge('m1/nav_bar', $data);
             $this->template->content = View::forge('m1/input', $data);
