@@ -1,8 +1,14 @@
 
 .input {
-    width: 40%;
+    width: 100%;
     margin:auto;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(../img/background2.jpg);
+	background-size: 100%;
 
+}
+.smallCenter{
+    width:50%;
+    margin:auto;
 }
 .form-group1 {
     padding-top: 15px;

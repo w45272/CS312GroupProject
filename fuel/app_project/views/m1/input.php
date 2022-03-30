@@ -2,6 +2,7 @@
 <?php echo Asset::js('input.js'); ?>
 
 <div class = "input"> 
+    <div class= "smallCenter">
     <?php if(isset($messages) and count($messages)>0){
         echo "<div id='warning'><ul>";
         foreach($messages as $msg){
@@ -51,5 +52,5 @@
          
             document.getElementById('form_submit').addEventListener('click',formSubmit, true);
          </script>
-         
+       </div>  
 </div> 
