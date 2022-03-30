@@ -27,7 +27,7 @@ class Controller_M1 extends Controller_template
 	{
         $data = array();
        // $data['title'] = 'Test Index Page';
-        $this->template->header = View::forge('m1/header', array('title' => 'Test Home Page'));
+        $this->template->header = View::forge('m1/header', array('title' => 'Home Page'));
         $this->template->footer = View::forge('m1/footer', $data);
         $this->template->nav_bar = View::forge('m1/nav_bar', $data);
         $this->template->content = View::forge('m1/home', $data);
