@@ -1,0 +1,27 @@
+
+.input {
+    width: 40%;
+    margin:auto;
+
+}
+.form-group1 {
+    padding-top: 15px;
+}
+.form-group2 {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+#form_submit {
+    /* position: absolute;
+    left:50%; */
+    
+}
+
+#warning_msg {
+    color: red;
+    
+}
+#infoText {
+    border: 2px dotted white;
+    text-align:center;
+}

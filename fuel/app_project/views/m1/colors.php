@@ -14,7 +14,7 @@
             
             <p id='warning".$x."' hidden >Please Choose an unused color! </p> 
             <select id='color_select".$x."' name='colors' class='color_select'> 
-                            <option value='red'>Red</option>
+                            <option value='red'>Red <svg width='10px' height='10px'><rect width='10px' height='10px' fill='red' stroke='red' stroke-width='1' /></svg></option>
                             <option value='orange'>Orange</option>
                             <option value='yellow'>Yellow</option>
                             <option value='green'>Green</option>
