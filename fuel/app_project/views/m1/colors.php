@@ -61,10 +61,10 @@
         ?>
     
     </table>
-    
-    <?php
-        echo "<button id='print_button'>Print Page</button>";
-    ?>
-
+   
+<div>
+        <button onClick="window.print()">Print
+        </button>
+    </div>
     
 </div>
