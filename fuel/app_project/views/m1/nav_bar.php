@@ -6,7 +6,6 @@
             <li><?php echo HTML::anchor('', "Home")?></li> 
             <li><?php echo HTML::anchor('index.php/about', "About")?></li> 
             <li><?php echo HTML::anchor('index.php/colors', "Color Coordinator")?></li>
-            <li><?php echo HTML::anchor('index.php/other', "Other")?></li>
         </ul>
 </nav>
 </div>
