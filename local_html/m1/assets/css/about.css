@@ -20,7 +20,7 @@
     overflow: hidden;
     padding-left: 25%;
     padding-right: 20%;
-    background:linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url(../img/background.jpg);
+    background:linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(../img/background.jpg);
     background-size: 100%;
 
 }
