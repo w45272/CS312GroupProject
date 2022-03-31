@@ -45,6 +45,9 @@
     width: 500px;
     font-size: 9px;
 }
+#warning_msg {
+    color:red;
+}
 
 @media print{
 footer, nav, button, h1{

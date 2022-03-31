@@ -11,8 +11,7 @@
         <?php
         for($x=0; $x<$count; $x++){
             echo "<tr><td>
-            
-            <p id='warning".$x."' hidden >Please Choose an unused color! </p> 
+             
             <select id='color_select".$x."' name='colors' class='color_select'> 
                             <option value='red'>Red</option>
                             <option value='orange'>Orange</option>
