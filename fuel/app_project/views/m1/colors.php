@@ -14,15 +14,15 @@
             
             <p id='warning".$x."' hidden >Please Choose an unused color! </p> 
             <select id='color_select".$x."' name='colors' class='color_select'> 
-                            <option value='red'>Red  &#x1f7e5; </option>
-                            <option value='orange'>Orange &#x1f7e7</option>
+                            <option value='red'>Red</option>
+                            <option value='orange'>Orange</option>
                             <option value='yellow'>Yellow</option>
-                            <option value='green'>Green &#x1f7e9</option>
-                            <option value='blue'>Blue &#x1f7e6</option>
-                            <option value='purple'>Purple &#x1f7ea</option>
-                            <option value='grey'>Grey &#x1f532</option>
-                            <option value='brown'>Brown &#x1f7eb</option>
-                            <option value='black'>Black &#x1f533</option>
+                            <option value='green'>Green</option>
+                            <option value='blue'>Blue</option>
+                            <option value='purple'>Purple</option>
+                            <option value='grey'>Grey</option>
+                            <option value='brown'>Brown</option>
+                            <option value='black'>Black</option>
                             <option value='teal'>Teal</option>
                            </select>
                             
