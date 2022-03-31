@@ -1,17 +1,17 @@
 .home{
     text-align: center;
-	overflow: hidden;
-	padding-left: 15%;
+	overflow: auto;
+	margin: auto;
 	background: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url(../img/background.jpg);
 	background-size: 100%;
     width: auto;
     height: 100%;
 }
 .welcome {
-	font-size: 60px;
-	margin: auto;
-	width: 50%;
-	text-align: center;
-	padding-right: 200px;
-	color: white;
+  font-size: 60px;
+  color: white;
+}
+
+img {
+  width: 30%;
 }
