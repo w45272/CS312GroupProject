@@ -48,6 +48,21 @@
 #warning_msg {
     color:red;
 }
+.red{background-color:red;}
+.orange{background-color:orange;}
+.yellow{background-color:yellow;}
+.green{background-color:green;}
+.blue{background-color:blue;}
+.purple{background-color:purple;}
+.grey{background-color:gray;}
+.brown{background-color:brown;}
+.black{background-color:black;}
+.teal{background-color:teal;}
+.none{background-color:white;}
+
+
+
+
 
 @media print{
 footer, nav, button, h1{
