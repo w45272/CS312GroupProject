@@ -7,14 +7,19 @@
         <col class="small_col_one">
         <col class="small_col_two">
         <thead>
+            <th>Select A Color</th><th>Painted Locations</th>
         </thead>
         <?php
         for($x=0; $x<$count; $x++){
             echo "<tr><td>
+            <div class='custom-radios'>
             <input type='radio' id='radio".$x."' value='".$x."' name='colorChoice'";
             if($x==0) echo "checked";
-            echo " >
-            <select id='color_select".$x."' name='colors' class='color_select' > 
+            echo " ><label id='label".$x."' for='radio".$x."' ><span id='span".$x."'>
+                <img id='img".$x."'  src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg' alt='Checked Icon' />
+                </span></label></div>";
+
+            echo "<select id='color_select".$x."' name='colors' class='color_select' > 
                             <option value='red'>Red</option>
                             <option value='orange'>Orange</option>
                             <option value='yellow'>Yellow</option>
@@ -26,7 +31,7 @@
                             <option value='black'>Black</option>
                             <option value='teal'>Teal</option>
                            </select>
-              <svg width='40' height='25'><rect width='40' height='25' id='cBox".$x."'></svg>        
+                    
                     </td> 
                     <td><p id='color_list".$x."'></p>  </td>
                   </tr>";
@@ -34,7 +39,7 @@
             // and add event listeners      
             echo "<script>";
             echo "document.getElementById('color_select".$x."').getElementsByTagName('option')[".$x."].selected = 'selected';";
-            echo "document.getElementById('cBox".$x."').style.fill = document.getElementById('color_select".$x."').value;";
+            echo "document.getElementById('span".$x."').style.backgroundColor = document.getElementById('color_select".$x."').value;";
             echo "document.getElementById('color_select".$x."').addEventListener('focus', saveValue);";
             echo "document.getElementById('color_select".$x."').addEventListener('change', validateChange);";
             echo "document.getElementById('radio".$x."').addEventListener('change', setChosenColor);";

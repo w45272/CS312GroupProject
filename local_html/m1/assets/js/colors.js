@@ -25,8 +25,8 @@
             for (const sel of allSel){
                 currentSelected.push(sel.value);
             }
-            var box = "cBox" + e.target.id.substring(12);
-            document.getElementById(box).style.fill = e.target.value;   
+            var box = "span" + e.target.id.substring(12);
+            document.getElementById(box).style.backgroundColor = e.target.value;   
             updateColor(e.target.id.substring(12));
         }
         //handler: set background color to selected on click

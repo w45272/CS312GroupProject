@@ -6,7 +6,6 @@
 	background-size: 100%;
     width: auto;
     height: auto;
-
 }
 
 .input{
@@ -19,13 +18,14 @@
 .colors table {
         width: 75%;
         color: white;
-        border: 3px solid white;
+        border: 2px solid white;
         text-align: center;
         margin: auto;
+         
 }
-.colors td{
-    border: 3px solid white;
-    min-width: 15px;
+.colors td, th{
+    border: 2px solid white;
+    min-width: 15px;   
 }
 
 .small_col_one {
@@ -35,16 +35,24 @@
 .small_col_two {
     width:80%;
 }
+.color_select {
+    margin-top: 5px;
+}
 #small_table{
     margin-top: auto;
     height:250px;
+    border-collapse: collapse;
+    font-family: "Trebuchet MS", sans-serif;
+   
 }
 #large_table{
     margin-top: auto;
     height: 500px;
     width: 500px;
-    font-size: 9px;
+    font-size: 15px;
+    font-family: "Trebuchet MS", sans-serif;
 }
+
 #warning_msg {
     color:red;
 }
@@ -59,6 +67,50 @@
 .black{background-color:black;}
 .teal{background-color:teal;}
 .none{background-color:white;}
+ 
+ 
+.custom-radios {    
+    width: 40px;
+    margin-left: 8px;
+    float: left;
+  }
+
+.custom-radios input[type="radio"] {
+    display: none;
+}
+.custom-radios label {
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      width:20px;
+}
+
+.custom-radios span {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        margin: -1px 4px 0 0;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid #FFFFFF;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        line-height: 44px;
+}    
+.custom-radios img {
+          opacity: 0;
+          margin-top:9px;
+          transition: all .3s ease;
+       }     
+    
+.custom-radios :checked + label span img {
+      opacity: 1;
+    }
+  
+
 
 
 
