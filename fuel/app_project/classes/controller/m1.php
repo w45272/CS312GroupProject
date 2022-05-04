@@ -22,6 +22,7 @@
 class Controller_M1 extends Controller_template
 {
     
+                         
 
 	public function action_index()
 	{
@@ -31,6 +32,17 @@ class Controller_M1 extends Controller_template
         $this->template->footer = View::forge('m1/footer', $data);
         $this->template->nav_bar = View::forge('m1/nav_bar', $data);
         $this->template->content = View::forge('m1/home', $data);
+	}
+	
+	public function action_editColor()
+	{
+	    $colors = array('red'=>'#FF0000','Orange'=>'#FFA500','Yellow'=>'#FFFF00','Green'=>'#008000','Blue'=>'#0000FF', 'Purple'=>'#800080','Gray'=>'#808080 ','Brown'=>'#A52A2A','Black'=>'#000000','Teal'=>'#008080');
+	    $data = array('colors'=>$colors);
+        $this->template->header = View::forge('m1/header', array('title' => 'Edit Color Options'));
+        $this->template->footer = View::forge('m1/footer', $data);
+        $this->template->nav_bar = View::forge('m1/nav_bar', $data);
+        $this->template->content = View::forge('m1/editColor', $data);
+	
 	}
 
 	
@@ -62,6 +74,7 @@ class Controller_M1 extends Controller_template
 	
 	public function post_colors()
 	{
+	    $colors = array('red'=>'#FF0000','Orange'=>'#FFA500','Yellow'=>'#FFFF00','Green'=>'#008000','Blue'=>'#0000FF', 'Purple'=>'#800080','Gray'=>'#808080 ','Brown'=>'#A52A2A','Black'=>'#000000','Teal'=>'#008080');
 	    $rules = Validation::forge(); 
         $rules->add('size', 'Grid Size')
             ->add_rule('required')
@@ -73,7 +86,7 @@ class Controller_M1 extends Controller_template
             ->add_rule('numeric_max', 10); 
 	
 	    if($rules->run()){
-            $data = array('size' => Input::post('size'), 'count' => Input::post('count')); 
+            $data = array('size' => Input::post('size'), 'count' => Input::post('count'),'colors'=>$colors); 
         
             $this->template->header = View::forge('m1/header', array('title' => 'Color Generator'));
             $this->template->footer = View::forge('m1/footer', $data);

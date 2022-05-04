@@ -27,7 +27,7 @@ function saveValue(e){
 //handler: set background color to selected on click
 function tableClick(e){
     //document.getElementById(e.target.id).className=selectedColor;
-    e.target.className=selectedColor;
+    e.target.style.backgroundColor=selectedColor;
     addToTableList(e);
 }
 function addToTableList(e){
@@ -70,7 +70,12 @@ function setChosenColor(e){
 function updateColor(e){
     for(let i=0; i<colorLists.length; i++){
 		for(let j = 0; j<colorLists[i].length; j++){
-			document.getElementById(colorLists[i][j]).className = currentSelected[i]; 
+			document.getElementById(colorLists[i][j]).style.backgroundColor = currentSelected[i]; 
 		} 
    }
 }
+function editClick(e){
+    window.location.href ="../index.php/editColor";
+
+}
+

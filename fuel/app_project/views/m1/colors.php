@@ -17,8 +17,12 @@
             echo " ><label id='label".$x."' for='radio".$x."' ><span id='span".$x."'>
                 <img id='img".$x."'  src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg' alt='Checked Icon' />
                 </span></label></div>";
-            echo "<select id='color_select".$x."' name='colors' class='color_select' >
-                            <option value='red'>Red</option>
+            echo "<select id='color_select".$x."' name='colors' class='color_select' >";
+                foreach($colors as $key=>$value){
+                    echo "<option value='".$value."'>".$key."</option>";
+                
+                } 
+                 /*           <option value='red'>Red</option>
                             <option value='orange'>Orange</option>
                             <option value='yellow'>Yellow</option>
                             <option value='green'>Green</option>
@@ -27,8 +31,8 @@
                             <option value='grey'>Grey</option>
                             <option value='brown'>Brown</option>
                             <option value='black'>Black</option>
-                            <option value='teal'>Teal</option>
-                           </select>
+                            <option value='teal'>Teal</option>  */
+            echo "</select>
                     </td>
                     <td><p id='color_list".$x."'></p>  </td>
                   </tr>";
@@ -46,6 +50,8 @@
         ?>
     </table>
     <p></p>
+    <button id="editBtn"> Add/Edit Color Options</button>
+    <script>document.getElementById("editBtn").addEventListener('click', editClick);</script>
     <p></p>
     <p></p>
     <table id="large_table">

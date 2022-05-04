@@ -21,7 +21,7 @@ return array(
 	'_root_' => 'm1/index',
     'about' => 'm1/about',
     'colors' => 'm1/colors',
-    
+    'editColor' => 'm1/editColor',
 
 	/**
 	 * -------------------------------------------------------------------------
