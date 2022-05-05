@@ -40,7 +40,7 @@
         ?>
     </table>
     <p></p>
-    <button id="editBtn"> Add/Edit Color Options</button>
+    <button class="addEditButton" id="editBtn"> Add/Edit Color Options</button>
     <script>document.getElementById("editBtn").addEventListener('click', editClick);</script>
     <p></p>
     <p></p>
@@ -68,6 +68,7 @@
         echo "</script>";
         ?>
     </table>
+<<<<<<< HEAD
     <div>
          <?php echo Form::open(array('action' => 'index.php/printView', 'method' => 'post','id'=>'print_form')); ?>  
          <div class = "form-group1"> 
@@ -81,5 +82,10 @@
             echo Form::close(); 
          ?>
         <script>document.getElementById("print_submit").addEventListener('click', printClick);</script>
+=======
+<div>
+        <button class = "printButton" onClick="window.print()">Print
+        </button>
+>>>>>>> 583afd25386a43eabb10cda8a127b731e603d0f4
     </div>
 </div>

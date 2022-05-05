@@ -7,7 +7,6 @@
     width: auto;
     height: auto;
 }
-
 .input{
 	overflow: hidden;
 	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(../img/background2.jpg);
@@ -21,7 +20,6 @@
         border: 2px solid white;
         text-align: center;
         margin: auto;
-         
 }
 .colors td, th{
     border: 2px solid white;
@@ -31,7 +29,6 @@
 .small_col_one {
     width:20%;                    
 }
-
 .small_col_two {
     width:80%;
 }
@@ -52,7 +49,6 @@
     font-size: 15px;
     font-family: "Trebuchet MS", sans-serif;
 }
-
 #warning_msg {
     color:red;
 }
@@ -67,7 +63,6 @@
 .black{background-color:black;}
 .teal{background-color:teal;}
 .none{background-color:white;}
- 
  
 .custom-radios {    
     width: 40px;
@@ -109,12 +104,6 @@
 .custom-radios :checked + label span img {
       opacity: 1;
     }
-  
-
-
-
-
-
 
 @media print{
 footer, nav, button, h1{
@@ -154,4 +143,34 @@ html, body{
     height: fit-content;
 }
 }
+.addEditButton {
+    /* position: absolute;
+    left:50%; */
+    width: 200px;
+   background-color: #9932CC;
+   color: white;
+   padding: 15px;
+   margin: 10px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.addEditButton:hover {
+    background-color: #8B008B;
+}
 
+.printButton {
+    /* position: absolute;
+    left:50%; */
+    width: 200px;
+   background-color: #9932CC;
+   color: white;
+   padding: 15px;
+   margin: 10px 0;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.printButton:hover {
+    background-color: #8B008B;
+}
