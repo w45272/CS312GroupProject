@@ -175,7 +175,7 @@ div{
 html, body{
     height: fit-content;
 }
-}
+}*/
 .addEditButton {
     /* position: absolute;
     left:50%; */
@@ -206,4 +206,4 @@ html, body{
 }
 .printButton:hover {
     background-color: #8B008B;
-}*/
+}
