@@ -70,7 +70,8 @@ function setChosenColor(e){
 function updateColor(e){
     for(let i=0; i<colorLists.length; i++){
 		for(let j = 0; j<colorLists[i].length; j++){
-			document.getElementById(colorLists[i][j]).style.backgroundColor = currentSelected[i]; 
+			document.getElementById(colorLists[i][j]).style.backgroundColor = currentSelected[i];
+			selectedColor = currentSelected[i]; 
 		} 
    }
 }
