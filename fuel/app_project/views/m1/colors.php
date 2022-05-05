@@ -68,24 +68,11 @@
         echo "</script>";
         ?>
     </table>
-<<<<<<< HEAD
+
     <div>
-         <?php echo Form::open(array('action' => 'index.php/printView', 'method' => 'post','id'=>'print_form')); ?>  
-         <div class = "form-group1"> 
-            <input type="hidden" value="" id="cList"></input> 
-            <input type="hidden" value="" id="cSelected"></input>                    
-         </div>      
-         <?php echo Form::button('printbutton', 'Print', array('type' => 'button', 'id'=>'print_submit')); 
-         ?> 
          
-         <?php 
-            echo Form::close(); 
-         ?>
-        <script>document.getElementById("print_submit").addEventListener('click', printClick);</script>
-=======
-<div>
-        <button class = "printButton" onClick="window.print()">Print
-        </button>
->>>>>>> 583afd25386a43eabb10cda8a127b731e603d0f4
+    
+    <button id="print_submit">Print</button>        
+     <script>document.getElementById("print_submit").addEventListener('click', printClick);</script>
     </div>
 </div>

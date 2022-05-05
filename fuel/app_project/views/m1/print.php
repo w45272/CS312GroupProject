@@ -37,3 +37,10 @@
 
     </div>
 </div>
+<script>
+    var all = document.cookie;
+    var colors = all.split(";");
+    var list = colors[0];
+    var x = JSON.stringify(list);
+    document.getElementById('color0').innerHTML = x;
+</script>
