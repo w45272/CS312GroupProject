@@ -22,6 +22,7 @@ return array(
     'about' => 'm1/about',
     'colors' => 'm1/colors',
     'editColor' => 'm1/editColor',
+    'updateColors' => 'm1/updateColors',
 
 	/**
 	 * -------------------------------------------------------------------------

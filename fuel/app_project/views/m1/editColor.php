@@ -23,6 +23,8 @@
                     echo "</div>";
                 
                 }
+                echo Form::input("colorCount", $count, array('id'=>'colorCount', 'type'=>'hidden'));
+
              ?>
          </div> 
          
@@ -31,15 +33,9 @@
          
          <?php 
             echo Form::close(); 
-         ?> 
-         <script>
-            function editSubmit(){
-                var x = document.getElementById('color1');
-                
-                if(x.value !="") {document.getElementById('edit_form').requestSubmit();}
-            }
-            document.getElementById('edit_submit').addEventListener('click',editSubmit, true);
-         </script>
-    
+         ?>
+         <script> 
+        document.getElementById('edit_submit').addEventListener('click',editSubmit, true);
+        </script>
 
 </div>

@@ -44,6 +44,24 @@ class Controller_M1 extends Controller_template
         $this->template->content = View::forge('m1/editColor', $data);
 	
 	}
+	public function post_updateColors(){
+        $data = array();
+	    $colors = array();
+	    $size = Input::post('colorCount');
+	    for($x=1; $x<$size; $x++){
+	        $value=Input::post('color'.$x);
+	        $name=Input::post('cName'.$x);
+	        $colors[$name]=$value;    
+	    }
+	    
+        $data = array('size' =>Session::get('sSize'), 'count'=>Session::get('sCount'),'colors'=>$colors); 
+	    $this->template->header = View::forge('m1/header', array('title' => 'Color Generator'));
+        $this->template->footer = View::forge('m1/footer', $data);
+        $this->template->nav_bar = View::forge('m1/nav_bar', $data);
+        $this->template->content = View::forge('m1/colors', $data);
+	    
+	    
+	}
 
 	
 	public function action_about()
@@ -59,8 +77,8 @@ class Controller_M1 extends Controller_template
 
 	public function action_colors()
 	{
-	
-	         
+
+	    	         
 	}
 	public function get_colors(){
 	    $data = array();
@@ -75,6 +93,7 @@ class Controller_M1 extends Controller_template
 	public function post_colors()
 	{
 	    $colors = array('red'=>'#FF0000','Orange'=>'#FFA500','Yellow'=>'#FFFF00','Green'=>'#008000','Blue'=>'#0000FF', 'Purple'=>'#800080','Gray'=>'#808080 ','Brown'=>'#A52A2A','Black'=>'#000000','Teal'=>'#008080');
+	    
 	    $rules = Validation::forge(); 
         $rules->add('size', 'Grid Size')
             ->add_rule('required')
@@ -86,6 +105,8 @@ class Controller_M1 extends Controller_template
             ->add_rule('numeric_max', 10); 
 	
 	    if($rules->run()){
+	        Session::set('sSize', Input::post('size'));
+	        Session::set('sCount', Input::post('count'));
             $data = array('size' => Input::post('size'), 'count' => Input::post('count'),'colors'=>$colors); 
         
             $this->template->header = View::forge('m1/header', array('title' => 'Color Generator'));
