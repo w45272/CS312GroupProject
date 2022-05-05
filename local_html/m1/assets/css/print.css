@@ -1,0 +1,36 @@
+footer, nav, button, h1{
+    display: none;
+}
+body {
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+  }
+select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+header #logo{
+    width: 50px!important;
+}
+header h2{
+    font-size: 20px!important;
+    background: white;
+    -webkit-text-fill-color:black!important; 
+}
+.colors table {
+    color: black!important;
+    border: 3px solid black!important;
+    margin-left: -100px;
+    margin-top:0px;
+}
+.colors td{
+border: 3px solid black!important;
+}
+div{
+    display: block!important;
+    float: none!important;
+}
+html, body{
+    height: fit-content;
+}
