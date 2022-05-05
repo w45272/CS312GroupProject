@@ -107,7 +107,7 @@
 
 
 
-
+/*
 .print here, nav, footer, h1{
     display: none;
     visibility: hidden;
@@ -137,7 +137,7 @@
     border: 2px solid black!important;
 }
 
-/*
+
 @media print{
 footer, nav, button, h1{
     display: none;
