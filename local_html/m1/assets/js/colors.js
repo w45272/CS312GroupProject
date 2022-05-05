@@ -7,6 +7,10 @@ var colorLists = [];
 //document ready handler
 document.addEventListener('DOMContentLoaded', (e)=>{
     selectedColor = document.getElementById("color_select0").value;
+    const allSel = document.querySelectorAll('.color_select');
+    for (const sel of allSel){
+        currentSelected.push(sel.value);
+    }
 });
 
 //helper function: updates the dropdown selected colors
@@ -78,5 +82,14 @@ function updateColor(e){
 function editClick(e){
     window.location.href ="../index.php/editColor";
 
+}
+function printClick(){
+    var names = [];
+    const allSel = document.querySelectorAll('.color_select');
+    for (const sel of allSel){
+        names.push(sel.options[sel.selectedIndex].text);
+    }
+    document.cookie = "cSelected="+JSON.stringify(names)+" , cList="+JSON.stringify(colorLists);
+    document.getElementById('print_form').requestSubmit();
 }
 

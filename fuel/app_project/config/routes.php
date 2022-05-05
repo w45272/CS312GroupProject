@@ -23,6 +23,7 @@ return array(
     'colors' => 'm1/colors',
     'editColor' => 'm1/editColor',
     'updateColors' => 'm1/updateColors',
+    'printView' => 'm1/printView',
 
 	/**
 	 * -------------------------------------------------------------------------

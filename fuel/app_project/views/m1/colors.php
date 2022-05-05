@@ -22,16 +22,6 @@
                     echo "<option value='".$value."'>".$key."</option>";
                 
                 } 
-                 /*           <option value='red'>Red</option>
-                            <option value='orange'>Orange</option>
-                            <option value='yellow'>Yellow</option>
-                            <option value='green'>Green</option>
-                            <option value='blue'>Blue</option>
-                            <option value='purple'>Purple</option>
-                            <option value='grey'>Grey</option>
-                            <option value='brown'>Brown</option>
-                            <option value='black'>Black</option>
-                            <option value='teal'>Teal</option>  */
             echo "</select>
                     </td>
                     <td><p id='color_list".$x."'></p>  </td>
@@ -78,8 +68,18 @@
         echo "</script>";
         ?>
     </table>
-<div>
-        <button onClick="window.print()">Print
-        </button>
+    <div>
+         <?php echo Form::open(array('action' => 'index.php/printView', 'method' => 'post','id'=>'print_form')); ?>  
+         <div class = "form-group1"> 
+            <input type="hidden" value="" id="cList"></input> 
+            <input type="hidden" value="" id="cSelected"></input>                    
+         </div>      
+         <?php echo Form::button('printbutton', 'Print', array('type' => 'button', 'id'=>'print_submit')); 
+         ?> 
+         
+         <?php 
+            echo Form::close(); 
+         ?>
+        <script>document.getElementById("print_submit").addEventListener('click', printClick);</script>
     </div>
 </div>
