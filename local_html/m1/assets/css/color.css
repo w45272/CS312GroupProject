@@ -105,6 +105,39 @@
       opacity: 1;
     }
 
+
+
+
+.print here, nav, footer, h1{
+    display: none;
+    visibility: hidden;
+}
+.print body {
+    -webkit-filter: grayscale(100%)!important; 
+    filter: grayscale(100%)!important;
+  }
+.print table {
+        width: 75%;
+        color: black;
+        border: 2px solid black;
+        text-align: center;
+        margin: auto;
+        background-color: white!important;
+         
+}
+.print td, th{
+    border: 2px solid black;
+    min-width: 15px;   
+}
+.print #small_table{
+    border: 2px solid black!important;
+   
+}
+#large_table{
+    border: 2px solid black!important;
+}
+
+/*
 @media print{
 footer, nav, button, h1{
     display: none;
@@ -173,4 +206,4 @@ html, body{
 }
 .printButton:hover {
     background-color: #8B008B;
-}
+}*/
