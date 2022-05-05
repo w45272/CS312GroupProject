@@ -50,7 +50,7 @@
         ?>
     </table>
     <p></p>
-    <button id="editBtn"> Add/Edit Color Options</button>
+    <button class="addEditButton" id="editBtn"> Add/Edit Color Options</button>
     <script>document.getElementById("editBtn").addEventListener('click', editClick);</script>
     <p></p>
     <p></p>
@@ -79,7 +79,7 @@
         ?>
     </table>
 <div>
-        <button onClick="window.print()">Print
+        <button class = "printButton" onClick="window.print()">Print
         </button>
     </div>
 </div>
