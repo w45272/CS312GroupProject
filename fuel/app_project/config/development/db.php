@@ -22,9 +22,9 @@
 return array(
 	'default' => array(
 		'connection' => array(
-			'dsn'      => 'mysql:host=localhost;dbname=fuel_dev',
-			'username' => 'root',
-			'password' => 'root',
+			'dsn'      => 'mysql:host=faure.cs.colostate.edu;dbname=backlira',
+			'username' => 'backlira',
+			'password' => '831046791',
 		),
 	),
 );

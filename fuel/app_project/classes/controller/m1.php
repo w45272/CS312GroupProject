@@ -19,6 +19,8 @@
  * @package  app
  * @extends  Controller
  */
+use \Model\MyRandomName;
+ 
 class Controller_M1 extends Controller_template
 {
     
@@ -36,7 +38,9 @@ class Controller_M1 extends Controller_template
 	
 	public function action_editColor()
 	{
-	    $colors = array('red'=>'#FF0000','Orange'=>'#FFA500','Yellow'=>'#FFFF00','Green'=>'#008000','Blue'=>'#0000FF', 'Purple'=>'#800080','Gray'=>'#808080 ','Brown'=>'#A52A2A','Black'=>'#000000','Teal'=>'#008080');
+	    //$colors = array('red'=>'#FF0000','Orange'=>'#FFA500','Yellow'=>'#FFFF00','Green'=>'#008000','Blue'=>'#0000FF', 'Purple'=>'#800080','Gray'=>'#808080 ','Brown'=>'#A52A2A','Black'=>'#000000','Teal'=>'#008080');
+	    
+	    $colors = MyRandomName::getColors();
 	    $data = array('colors'=>$colors);
         $this->template->header = View::forge('m1/header', array('title' => 'Edit Color Options'));
         $this->template->footer = View::forge('m1/footer', $data);
