@@ -48,7 +48,13 @@ function addToTableList(e){
     }
     colorLists[selectedList].push(e.target.id);
     //console.log(colorLists[selectedList].toString());
+    sortList();
     updateLists();
+}
+function sortList() {
+	for(let i=0; i < colorLists[i].length; i++){
+		colorLists[i].sort();
+	}
 }
 function updateLists(){
     //console.log("lists: "+colorLists.length);
