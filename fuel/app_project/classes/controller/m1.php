@@ -63,10 +63,8 @@ class Controller_M1 extends Controller_template
 	    
 	}
 	public function action_printView(){
-	$colors = array('red'=>'#FF0000','Orange'=>'#FFA500','Yellow'=>'#FFFF00','Green'=>'#008000','Blue'=>'#0000FF', 'Purple'=>'#800080','Gray'=>'#808080 ','Brown'=>'#A52A2A','Black'=>'#000000','Teal'=>'#008080');
-	    $cList = Input::post('cList');
-	    $cSelected = Input::post('cSelected');
-	    $data = array('size' => Session::get('sSize'), 'count' => Session::get('sCount'),'colors'=>$colors, 'cList'=> $cList, 'cSelected'=>$cSelected); 
+
+	    $data = array('size' => Session::get('sSize'), 'count' => Session::get('sCount')); 
 	    $this->template->header = View::forge('m1/header', array('title' => 'Print Preview'));
         $this->template->footer = View::forge('m1/footer', $data);
         $this->template->nav_bar = View::forge('m1/nav_bar', $data);
