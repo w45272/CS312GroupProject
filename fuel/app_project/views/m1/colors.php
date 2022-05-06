@@ -72,7 +72,7 @@
     <div>
          
     
-    <button id="print_submit">Print</button>        
+    <button id="print_submit" class="printButton">Print</button>        
      <script>document.getElementById("print_submit").addEventListener('click', printClick);</script>
     </div>
 </div>

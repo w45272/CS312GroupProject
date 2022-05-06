@@ -105,9 +105,7 @@
       opacity: 1;
     }
 
-
-
-
+/*
 .print here, nav, footer, h1{
     display: none;
     visibility: hidden;
@@ -133,11 +131,12 @@
     border: 2px solid black!important;
    
 }
+*/
 #large_table{
     border: 2px solid black!important;
 }
 
-/*
+
 @media print{
 footer, nav, button, h1{
     display: none;
@@ -179,6 +178,7 @@ html, body{
 .addEditButton {
     /* position: absolute;
     left:50%; */
+
     width: 200px;
    background-color: #9932CC;
    color: white;
@@ -195,6 +195,7 @@ html, body{
 .printButton {
     /* position: absolute;
     left:50%; */
+
     width: 200px;
    background-color: #9932CC;
    color: white;
@@ -206,4 +207,4 @@ html, body{
 }
 .printButton:hover {
     background-color: #8B008B;
-}*/
+}
