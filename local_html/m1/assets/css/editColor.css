@@ -12,7 +12,9 @@
       min-height: 40vh;
   
   }
-
+body{
+    background-color: black;
+}
 #edit_submit {
     
    width: 200px;
