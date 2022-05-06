@@ -1,6 +1,6 @@
-<?php echo Asset::css('color.css'); ?>
+<?php echo Asset::css('print.css'); ?>
 
-<div class="colors">
+<div class="print">
     <table id="small_table">
         <col class="small_col_one">
         <col class="small_col_two">
@@ -8,6 +8,10 @@
             <th>Select A Color</th><th>Painted Locations</th>
         </thead>
         <?php
+        
+        echo "<script>sessionStorage.setItem('size','".$size."');"; 
+        echo "sessionStorage.setItem('count','".$count."');</script>";
+         
         for($x=0; $x<$count; $x++){
             echo "<tr><td><p id='color".$x."'></p></td>";
             echo "<td><p id='list".$x."'></p></td>
@@ -38,9 +42,13 @@
     </div>
 </div>
 <script>
-    var all = document.cookie;
-    var colors = all.split(";");
-    var list = colors[0];
-    var x = JSON.stringify(list);
-    document.getElementById('color0').innerHTML = x;
+    var colors = JSON.parse(sessionStorage.getItem('colors'));
+    for(var x=0; x<sessionStorage.getItem('count');x++){
+         document.getElementById('color'+x).innerHTML = colors[x];
+    }
+    var lists = JSON.parse(sessionStorage.getItem('cList'));
+        for(var x=0; x<sessionStorage.getItem('count');x++){
+         document.getElementById('list'+x).innerHTML = lists[x].toString();
+    }
+    
 </script>

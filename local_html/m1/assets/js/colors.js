@@ -6,6 +6,7 @@ var colorLists = [];
 
 //document ready handler
 document.addEventListener('DOMContentLoaded', (e)=>{
+    document.getElementById("print_submit").addEventListener('click', printClick);
     selectedColor = document.getElementById("color_select0").value;
     const allSel = document.querySelectorAll('.color_select');
     for (const sel of allSel){
@@ -89,7 +90,8 @@ function printClick(){
     for (const sel of allSel){
         names.push(sel.options[sel.selectedIndex].text);
     }
-    document.cookie = "cSelected="+JSON.stringify(names)+" , cList="+JSON.stringify(colorLists);
-    document.getElementById('print_form').requestSubmit();
+    sessionStorage.setItem("colors", JSON.stringify(names));
+    sessionStorage.setItem("cList", JSON.stringify(colorLists));
+    window.location.href ="../index.php/printView";
 }
 
