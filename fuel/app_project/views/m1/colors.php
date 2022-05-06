@@ -9,6 +9,8 @@
             <th>Select A Color</th><th>Painted Locations</th>
         </thead>
         <?php
+        echo "<script>sessionStorage.setItem('size','".$size."');"; 
+        echo "sessionStorage.setItem('count','".$count."');</script>";
         for($x=0; $x<$count; $x++){
             echo "<tr><td>
             <div class='custom-radios'>
@@ -40,7 +42,21 @@
         ?>
     </table>
     <p></p>
-    <button class="addEditButton" id="editBtn"> Add/Edit Color Options</button>
+        <?php echo Form::open(array('action' => 'index.php/editColor', 'method' => 'post','id'=>'edit_form2')); ?>  
+         <div class = "form-group1"> 
+            <?php
+                echo Form::input("size", $size, array('id'=>'size', 'type'=>'hidden'));
+                echo Form::input("count", $count, array('id'=>'count', 'type'=>'hidden'));
+             ?>
+         </div> 
+         
+         <?php echo Form::button('frmbutton', 'Add/Edit Colors', array('type' => 'button', 'class'=>'printButton', 'id'=>'editBtn')); 
+         ?> 
+         
+         <?php 
+            echo Form::close(); 
+         ?> 
+    
     <script>document.getElementById("editBtn").addEventListener('click', editClick);</script>
     <p></p>
     <p></p>
@@ -69,8 +85,22 @@
         ?>
     </table>
 
-    <div>   
-    <button id="print_submit" class="printButton">Print</button>        
-     <script></script>
+    <div> 
+    <?php echo Form::open(array('action' => 'index.php/printView', 'method' => 'post','id'=>'print_form')); ?>  
+         <div class = "form-group1"> 
+            <?php
+                echo Form::input("size", $size, array('id'=>'size', 'type'=>'hidden'));
+                echo Form::input("count", $count, array('id'=>'count', 'type'=>'hidden'));
+
+             ?>
+         </div> 
+         
+         <?php echo Form::button('frmbutton', 'Print', array('type' => 'button', 'class'=>'printButton', 'id'=>'print_submit')); 
+         ?> 
+         
+         <?php 
+            echo Form::close(); 
+         ?>       
+     <script> </script>
     </div>
 </div>

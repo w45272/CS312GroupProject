@@ -7,11 +7,7 @@
         <thead>
             <th>Select A Color</th><th>Painted Locations</th>
         </thead>
-        <?php
-        
-        echo "<script>sessionStorage.setItem('size','".$size."');"; 
-        echo "sessionStorage.setItem('count','".$count."');</script>";
-         
+        <?php         
         for($x=0; $x<$count; $x++){
             echo "<tr><td><p id='color".$x."'></p></td>";
             echo "<td><p id='list".$x."'></p></td>

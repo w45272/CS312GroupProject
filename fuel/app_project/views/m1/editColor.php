@@ -12,18 +12,20 @@
     <?php echo Form::open(array('action' => 'index.php/updateColors', 'method' => 'post','id'=>'edit_form')); ?>  
          <div class = "form-group1"> 
             <?php
-                $count = 0;
+                $Ccount = 0;
                 foreach($colors as $key=>$value){
-                    $count++;
+                    $Ccount++;
                     echo "<div>";
-                    echo Form::label("Color ".$count.":", "color".$count); 
-                    echo Form::input("color".$count, $value, array('id'=>"color".$count,'class' => 'text-input', 'data-huebee' => '{"className":"light-picker"}' ));
-                    echo Form::label("Name:", "cName".$count);
-                    echo Form::input('cName'.$count, $key, array('id'=>'cName'.$count,'type' => 'text'));
+                    echo Form::label("Color ".$Ccount.":", "color".$count); 
+                    echo Form::input("color".$Ccount, $value, array('id'=>"color".$Ccount,'class' => 'text-input', 'data-huebee' => '{"className":"light-picker"}' ));
+                    echo Form::label("Name:", "cName".$Ccount);
+                    echo Form::input('cName'.$Ccount, $key, array('id'=>'cName'.$Ccount,'type' => 'text'));
                     echo "</div>";
                 
                 }
-                echo Form::input("colorCount", $count, array('id'=>'colorCount', 'type'=>'hidden'));
+                echo Form::input("colorCount", $Ccount, array('id'=>'colorCount', 'type'=>'hidden'));
+                echo Form::input("size", $size, array('id'=>'size', 'type'=>'hidden'));
+                echo Form::input("count", $count, array('id'=>'count', 'type'=>'hidden'));
 
              ?>
          </div> 

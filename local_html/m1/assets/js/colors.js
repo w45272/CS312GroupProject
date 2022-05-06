@@ -87,7 +87,9 @@ function updateColor(e){
    }
 }
 function editClick(e){
-    window.location.href ="../index.php/editColor";
+    
+    document.getElementById('edit_form2').requestSubmit();
+    //window.location.href ="../index.php/editColor";
 
 }
 function printClick(){
@@ -98,6 +100,7 @@ function printClick(){
     }
     sessionStorage.setItem("colors", JSON.stringify(names));
     sessionStorage.setItem("cList", JSON.stringify(colorLists));
-    window.location.href ="../index.php/printView";
+    document.getElementById('print_form').requestSubmit();
+    //window.location.href ="../index.php/printView";
 }
 
