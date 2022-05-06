@@ -7,6 +7,9 @@
     width: auto;
     height: auto;
 }
+body{
+    background-color: black;
+}
 .input{
 	overflow: hidden;
 	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url(../img/background2.jpg);
