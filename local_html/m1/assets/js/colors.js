@@ -52,7 +52,7 @@ function addToTableList(e){
     updateLists();
 }
 function sortList() {
-	for(let i=0; i < colorLists[i].length; i++){
+	for(let i=0; i < colorLists.length; i++){
 		colorLists[i].sort();
 	}
 }
